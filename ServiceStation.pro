@@ -11,14 +11,14 @@ SOURCES += \
         camera.cpp \
         charger.cpp \
         client.cpp \
-        coffee_machine.cpp \
+        drinks.cpp \
         main.cpp \
         security.cpp \
         security_alarm.cpp \
         service.cpp \
-        snack_machine.cpp \
+        snacks.cpp \
         station.cpp \
-        vendor.cpp
+        vending_machine.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -29,10 +29,10 @@ HEADERS += \
     camera.h \
     charger.h \
     client.h \
-    coffee_machine.h \
+    drinks.h \
     security.h \
     security_alarm.h \
     service.h \
-    snack_machine.h \
+    snacks.h \
     station.h \
-    vendor.h
+    vending_machine.h
