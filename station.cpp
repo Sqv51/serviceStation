@@ -16,12 +16,19 @@ bool Station::addService(Service service){
     return true;
     }
 
-bool Station::rmService(){
+bool Station::rmService(std::string serviceID){
+    for(auto i : services){
+        if(i.getID()==serviceID){
+            services.pop_back();
+        }
+    }
     return true;
 }
 
 void Station::displayServices(){
+    std::cout << "=============Displaying Services============="<< std::endl;
     for(auto i : services){
+
         std::cout<< "ID: "<<i.getID() <<" Type: "<< i.getType() << std::endl;
     }
 }

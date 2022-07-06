@@ -11,7 +11,7 @@ public:
     Station(std::string city,int cityCode,int stationID);
     bool addService(Service service);
     //adds a service to the services vector
-    bool rmService();
+    bool rmService(std::string seviceID);
     //removes a service from services vector
     std::vector<Service> getServices();
     //returns the services vector

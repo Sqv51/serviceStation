@@ -27,6 +27,9 @@ int main(int argc, char *argv[])
         vending1.buy(0);
     }
     vending1.display_products();
+    kut.displayServices();
+
+
 
 
 
