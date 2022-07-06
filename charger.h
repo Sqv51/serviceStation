@@ -6,10 +6,13 @@
 class Charger: public Service{
 public:
     Charger(std::string serviceID,std::string serviceType);
+    Charger (const Charger &old_obj);
+    //copy constructor
     bool setStatus(bool status);
     bool setPrice(double price);
     double getPrice(){return price;}
     bool getStatus(){return status;}
+    bool charge();
 
 private:
     double price= 10.5;

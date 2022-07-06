@@ -8,7 +8,6 @@ CONFIG -= app_bundle
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        camera.cpp \
         charger.cpp \
         client.cpp \
         main.cpp \
@@ -24,7 +23,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    camera.h \
     charger.h \
     client.h \
     security.h \
@@ -32,3 +30,6 @@ HEADERS += \
     service.h \
     station.h \
     vending_machine.h
+
+FORMS += \
+    mainwindow.ui

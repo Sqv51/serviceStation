@@ -6,6 +6,11 @@
 #include <iostream>
 
 using namespace std;
+
+void action_buy(string ID,string Type,int Amount );
+void action_buy(string ID,string Type,int Double );
+void action_trigger_alarm();
+
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
