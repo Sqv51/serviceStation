@@ -8,14 +8,18 @@ class Vending_machine: public Service
 {
 public:
     Vending_machine(std::string serviceID,std::string serviceType);
-    std::string buy(int);
+   void buy(int);
+   void display_products();
+   void refill();
+   //resets the number of cups and sncaks
+
 
 
 
 private:
     int cups=100;
     std::vector<int>vslot{20,20,20,20};
-    std::vector<std::string>vlist{"[1]Çikolata","[2]Gazoz","[3]Bisküvi","[4]Popkek","[5]Espresso","[6]Latte"};
+    std::vector<std::string>vlist{"[0]Çokomel","[1]Çikolata","[2]Gazoz","[3]Bisküvi","[4]Popkek","[5]Espresso","[6]Latte"};
 
 };
 
