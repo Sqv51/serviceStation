@@ -9,7 +9,7 @@ class Station
 {
 public:
     Station(std::string city,int cityCode,int stationID);
-    bool addService();
+    bool addService(Service service);
     //adds a service to the services vector
     bool rmService();
     //removes a service from services vector

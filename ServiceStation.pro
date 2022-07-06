@@ -11,12 +11,10 @@ SOURCES += \
         camera.cpp \
         charger.cpp \
         client.cpp \
-        drinks.cpp \
         main.cpp \
         security.cpp \
         security_alarm.cpp \
         service.cpp \
-        snacks.cpp \
         station.cpp \
         vending_machine.cpp
 
@@ -29,10 +27,8 @@ HEADERS += \
     camera.h \
     charger.h \
     client.h \
-    drinks.h \
     security.h \
     security_alarm.h \
     service.h \
-    snacks.h \
     station.h \
     vending_machine.h
