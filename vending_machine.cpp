@@ -8,7 +8,7 @@ Vending_machine::Vending_machine(std::string serviceID, std::string serviceType)
     Vending_machine::serviceType = serviceType;
 }
 void Vending_machine::buy(int order){
-    if(order > int (vlist.size())){
+    if(order > int (vlist.size()-1)){
         std::cout<< "Invalid order"<<std::endl;
             }
     else if(order<4 && order >=0){

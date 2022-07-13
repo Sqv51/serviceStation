@@ -9,10 +9,11 @@ public:
     Client(std::string clientID, long double balance, std::string clientName);
     std::string getID(){return clientID;}
     std::string getName(){return clientName;}
-    long double getbalance(){return balance;}
+    double getbalance(){return balance;}
+    double spend(double price){balance -= price;}
 private:
     std::string clientID;
-    long double balance;
+    double balance;
     std::string clientName;
 };
 

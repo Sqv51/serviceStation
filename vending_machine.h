@@ -12,11 +12,13 @@ public:
    void display_products();
    void refill();
    //resets the number of cups and sncaks
+   double getprice(){return price;}
 
 
 
 
 private:
+    double price=5;
     int cups=100;
     std::vector<int>vslot{20,20,20,20};
     std::vector<std::string>vlist{"[0]Çokomel","[1]Çikolata","[2]Gazoz","[3]Bisküvi","[4]Popkek","[5]Espresso","[6]Latte"};
